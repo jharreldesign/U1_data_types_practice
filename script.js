@@ -5,11 +5,22 @@
  * Then, using your Literals, console.log "my favorite song is..." with the song's value
  */
 
+const myFavoritesong = "Understatement"
+console.log(myFavoritesong)
+console.log(`My favorite song is ${myFavoritesong}`)
+
 /*
  * Prompt 2:
  *
  * Create 3 variables using let and const, then console.log each of them, using a string literal (` ${} `} in the log
  */
+
+let wrestlerFirstName = "John"
+let wrestlerLastName = "Cena"
+const canWeSeeHim = false 
+
+console.log(`There once was a wrestler named ${wrestlerFirstName.toUpperCase()} ${wrestlerLastName.toUpperCase()}. But can we see him? ${canWeSeeHim}`)
+
 
 /*
  * Prompt 3:
@@ -22,24 +33,47 @@
  *   - calculate the remainder of dividing your variable by 2
  */
 
+let moneybags = 5000
+
+console.log(moneybags + 88989)
+console.log(moneybags-1)
+console.log(moneybags * 3)
+console.log(moneybags / 7)
+console.log(moneybags % 2)
+
 /*
  * Prompt 4:
  *
  * Create a variable called firstName and assign it to a string of your first
  * name. Create a variable called lastName and assign it to a string of your
  * last name.
+ * 
+ * 
  *
  * Create a variable called fullName and use addition to combine your firstName
  * and lastName variables.
  * Run a console.log that says 'hello my name is..." with your fullName. 
  */
 
+let firstName = "Jason"
+let lastName = "Harrel"
+
+console.log(`Hello my name is ${firstName} ${lastName}`)
 
 /* Arrays */
 
 // Create an array of Movies, then log the 2nd movie in your array
 // Use your array methods to add a movie in to the Front of the array, then the Back of the Array, then to the 2nd index point of the array
 
+let movies = ['The Goonies', 'Star Wars', 'Harry Potter', 'Jurassic Park']
+console.log(movies[1])
+console.log(movies.unshift("Star Wars: Episode V"))
+console.log(movies)
+console.log(movies.push("Die Hard"))
+console.log(movies)
+
+movies.splice(2, 0, "Toy Story")
+console.log(movies);
 
 /*
  *
@@ -57,12 +91,20 @@ let array3 = [
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
 
+console.log(array1[2])
+console.log(array2[1] [1])
+console.log(array3[1] [1] [1] [0])
 /*
  *
  * Use the length of the array below to retrieve the second to last item.
  */
 
 let array4 = ['a', 'b', 'c', 'd', 'e'];
+
+let theMissingLetter = array4.length - 2
+
+console.log(array4[theMissingLetter])
+
 
 /*
  *
@@ -77,9 +119,29 @@ let cathleen = ['Cathleen', 186, 'New York'];
 // Cathleen decides that Thom can't be named "Thom" anymore. Remove "Thom" from
 // the thom array and replace it with "Tom".
 
+console.log(thom.shift())
+console.log(thom)
+console.log(thom.unshift("Tom"))
+console.log(thom)
+
 // Karolin just had her birthday; change Karolin's array to reflect her being
 // a year older.
 
+console.log(karolin.splice([1], 1))
+console.log(karolin)
+console.log(karolin.splice(1, 0, 17))
+console.log(karolin)
+
 // Change Cathleen's hometown from New York to "Gotham City".
 
+console.log(cathleen.pop())
+console.log(cathleen)
+console.log(cathleen.push("Gotham City"))
+console.log(cathleen)
+
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+
+console.log(kristyn.pop())
+console.log(kristyn)
+console.log(kristyn.push("Oakland"))
+console.log(kristyn)
